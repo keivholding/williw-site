@@ -7,8 +7,8 @@ window.addEventListener("load", function () {
       setTimeout(() => {
         console.log(child);
         child.classList.add("open");
-      }, 500 * index);
-    }, 250);
+      }, 300 * index);
+    }, 500);
   });
 });
 
