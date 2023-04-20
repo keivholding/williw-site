@@ -6,9 +6,7 @@ window.addEventListener("load", function () {
     setTimeout(() => {
       setTimeout(() => {
         child.classList.add("open");
-      }, 500 * index);
-    }, 1000);
+      }, 350 * index);
+    }, 500);
   });
 });
-
-console.log(`Test`);
