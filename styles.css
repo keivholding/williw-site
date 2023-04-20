@@ -1,0 +1,137 @@
+:root {
+  --background-light: #f4f4f4;
+  --background-dark: #26272b;
+  --color-blue: #b5ebfa;
+  --color-purple: #bc93f6;
+  --color-dark-blue: #4d6de0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: OutfitLight;
+  src: url(./Outfit-Light.ttf);
+}
+
+.font-light {
+  font-family: OutfitLight;
+}
+
+@font-face {
+  font-family: OutfitMedium;
+  src: url(./Outfit-Medium.ttf);
+}
+
+.font-medium {
+  font-family: OutfitMedium;
+}
+
+@font-face {
+  font-family: OutfitBold;
+  src: url(./Outfit-Bold.ttf);
+}
+
+.font-bold {
+  font-family: OutfitBold;
+}
+
+body {
+  color: var(--background-dark);
+  padding: 0 20px;
+}
+
+.welcome-box {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.willow-text {
+  font-size: 14rem;
+  transform: scale(0.5);
+}
+
+.willow-subtext {
+  font-size: 3.5rem;
+}
+
+.coming-soon {
+  font-size: 2rem;
+  margin-top: 30px;
+  padding: 20px;
+  border: 2px solid var(--background-dark);
+  border-radius: 100px;
+  text-align: center;
+  min-width: 300px;
+}
+
+.circle-background {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.blue {
+  background: var(--color-blue);
+  top: 10px;
+  left: 100px;
+}
+
+.purple {
+  background: var(--color-purple);
+  top: 90px;
+  left: 750px;
+}
+
+.dark-blue {
+  background: var(--color-dark-blue);
+  top: 200px;
+  opacity: 0.4;
+}
+
+.child {
+  transform: scale(0);
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+
+.open {
+  animation: opened 1s;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+@keyframes opened {
+  0% {
+    transform: scale(0.5);
+  }
+
+  60% {
+    transform: scale(1.03);
+  }
+
+  80% {
+    transform: scale(0.97);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
