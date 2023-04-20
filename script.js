@@ -9,3 +9,5 @@ window.addEventListener("load", function () {
     }, 1000 * index);
   });
 });
+
+console.log(`Test`);
