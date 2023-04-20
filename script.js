@@ -5,7 +5,6 @@ window.addEventListener("load", function () {
   welcomeBox.querySelectorAll(".child").forEach((child, index) => {
     setTimeout(() => {
       setTimeout(() => {
-        console.log(child);
         child.classList.add("open");
       }, 300 * index);
     }, 500);
