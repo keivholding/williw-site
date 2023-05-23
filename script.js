@@ -10,22 +10,3 @@ window.addEventListener("load", function () {
     }, 500);
   });
 });
-
-const timer = function (sec) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, sec * 1000);
-  });
-};
-
-timer(3)
-  .then(() => {
-    console.log(`You waited 3 seconds`);
-    return timer(2);
-  })
-  .then(() => {
-    console.log(`You waited 2 seconds`);
-    return timer(1);
-  })
-  .then(() => {
-    console.log(`You waited 1 seconds`);
-  });
