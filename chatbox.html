@@ -6,10 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Willow Chat</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chatbox.css">
+
+    <script defer src="chatbox.js"></script>
+    <script defer src="https://kit.fontawesome.com/34a73839bf.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-
+    <div class="menu-chat-container">
+        <div class="menu">
+            <div class="willow-text-chat font-bold">Willow<img src="willow-logo.png" class="willow-logo-chat"
+                    style="max-width: 50px;">
+            </div>
+            <div class="divider"></div>
+            <div class="menu-items">
+                <div class="menu-icon chat-menu active">
+                    <i class="fa fa-comment" aria-hidden="true"></i>
+                    <div class="menu-description font-medium">Chat</div>
+                </div>
+                <div class="menu-icon data-menu">
+                    <i class="fa-sharp fa-solid fa-calendar-days"></i>
+                    <div class="menu-description font-medium">Progress</div>
+                </div>
+            </div>
+            <div class="chat"></div>
+        </div>
 </body>
 
 </html>
