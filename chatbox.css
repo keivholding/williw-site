@@ -128,9 +128,11 @@ textarea {
   background: none;
   border: none;
   resize: none;
+  overflow: hidden;
   outline: none;
   width: 90%;
   height: 100%;
+  transition: all 0.1s ease-in-out;
 }
 
 .users-message {
@@ -141,7 +143,7 @@ textarea {
   position: absolute;
   right: 18px;
   font-size: 2.5rem;
-  bottom: 15px;
+  bottom: 13px;
   display: flex;
   align-items: center;
 }
