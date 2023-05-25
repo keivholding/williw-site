@@ -14,6 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 }
 
 .willow-text-chat {
@@ -146,4 +147,18 @@ textarea {
   bottom: 13px;
   display: flex;
   align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border: 1px solid black;
+}
+
+td,
+th {
+  border-right: 1px solid black;
+  padding: 20px;
 }
